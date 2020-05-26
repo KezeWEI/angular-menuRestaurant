@@ -1,0 +1,34 @@
+<div class="back" [routerLink]="['/home']" routerLinkActive="router-link-active" ></div>
+		
+		<div class="p_content">		
+			<div class="p_info">				
+				<img [src]="domaine+list.img_url"/>				
+				<h2>{{list.title}}</h2>				
+				<p class="price">{{list.price}}</p>
+			</div>
+			<div class="p_detial">
+				<h3>
+					Product details					
+				</h3>
+				<div class="p_content" [innerHTML]="list.content"> 
+				</div>
+			</div>
+		</div>
+		
+		
+		<footer class="pfooter">
+			
+			<div class="cart">				
+				<strong>Number:</strong>
+				<div class="cart_num">
+		          <div class="input_left">-</div>
+		          <div class="input_center">
+		              <input type="text"  readonly="readonly" value="1" name="num" id="num" />
+		          </div>
+		          <div class="input_right">+</div>				      
+		        </div>								
+			
+			</div>
+			
+			<button class="addcart">Add to Shopping Cart</button>			
+		</footer>
